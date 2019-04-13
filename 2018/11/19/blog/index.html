@@ -2,7 +2,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<title>罗来的博客</title>
+<title>Hexo快速搭建博客</title>
 <meta name="author" content="LuoLai">
 <!--[if IE]>
   <meta http-equiv=refresh content='0, http://browsehappy.com'>
@@ -46,37 +46,14 @@
   </div>
 </header>
 
+
     <section class="main">
-      
-        <div class="post">
-  <div class="post-header index animation">
-    <h1 class="title">python基础语法</h1>
-    <div class="post-info">
-      
-        <span class="date">2018-11-19</span>
-      
-      
-        <span class="category">
-          <a href="/categories/语言基础/">语言基础</a>
-        </span>
-      
-    </div>
-  </div>
-
-  <div class="content">
-    
-  </div>
-  <a class="read-more" href="/2018/11/19/Python基础语法/">Read More</a>
-</div>
-
-      
-        <div class="post">
-  <div class="post-header index animation">
+      <div class="post">
+  <div class="post-header">
     <h1 class="title">Hexo快速搭建博客</h1>
     <div class="post-info">
-      
-        <span class="date">2018-11-19</span>
-      
+      <span class="date">2018-11-19</span>
+
       
         <span class="category">
           <a href="/categories/Hexo/">Hexo</a>
@@ -86,41 +63,42 @@
   </div>
 
   <div class="content">
+    <!-- Gallery -->
     
-  </div>
-  <a class="read-more" href="/2018/11/19/blog/">Read More</a>
-</div>
 
-      
-        <div class="post">
-  <div class="post-header index animation">
-    <h1 class="title">operator和if结构</h1>
-    <div class="post-info">
-      
-        <span class="date">2018-11-19</span>
-      
-      
-        <span class="category">
-          <a href="/categories/基本语法/">基本语法</a>
-        </span>
-      
+    <h1 id="使用Hexo搭建个人博客"><a href="#使用Hexo搭建个人博客" class="headerlink" title="使用Hexo搭建个人博客"></a>使用Hexo搭建个人博客</h1><h4 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1. 准备工作"></a>1. 准备工作</h4><p>   ~ 安装node.js —&gt; npm —&gt; hexo-cli<br>   ~ 安装git —&gt; 版本控制工具</p>
+<h4 id="2-更换npm（nodejs-package-manager）源"><a href="#2-更换npm（nodejs-package-manager）源" class="headerlink" title="2. 更换npm（nodejs package manager）源"></a>2. 更换npm（nodejs package manager）源</h4><p>   npm config set registry <a href="http://registry.npm.taobao.org/" target="_blank" rel="noopener">http://registry.npm.taobao.org/</a></p>
+<h4 id="3-安装hexo-cli"><a href="#3-安装hexo-cli" class="headerlink" title="3. 安装hexo-cli"></a>3. 安装hexo-cli</h4><p>   npm install -g hexo-cli</p>
+<h4 id="4-使用hexo搭建博客"><a href="#4-使用hexo搭建博客" class="headerlink" title="4. 使用hexo搭建博客"></a>4. 使用hexo搭建博客</h4><p>   hexo init blog —&gt; 创建博客目录<br>   cd blog —&gt; 进入目录<br>   npm install —&gt; 安装项目依赖项</p>
+<h4 id="5-编辑博客"><a href="#5-编辑博客" class="headerlink" title="5. 编辑博客"></a>5. 编辑博客</h4><p>   把写好的markdown文件放到source/_posts目录下<br>   hexo generate —&gt; 用markdown生成博客页面</p>
+<h4 id="6-将博客托管到github"><a href="#6-将博客托管到github" class="headerlink" title="6. 将博客托管到github"></a>6. 将博客托管到github</h4><p>   github提供了pages服务专门用来托管个人网站<br>   注册github账号并登陆，创建一个托管网站代码的仓库<br>   仓库的名字必须是：用户名.github.io</p>
+<p>修改博客的配置文件：_config.yml</p>
+<p>deploy:<br>  type: git<br>  repo: 仓库的完整的URL<br>  branch: master</p>
+<h4 id="7-将博客部署到github"><a href="#7-将博客部署到github" class="headerlink" title="7. 将博客部署到github"></a>7. 将博客部署到github</h4><p>   安装git部署器<br>   npm install hexo-deployer-git –save</p>
+<p>如果第一次使用git需要先配置用户名和邮箱（可以乱写）<br>git config –global user.email “<a href="mailto:hellokitty@qq.com" target="_blank" rel="noopener">hellokitty@qq.com</a>“<br>git config –global user.name “hellokitty”</p>
+<p>执行部署操作<br>hexo deploy -g</p>
+<p>此操作会提示输入github的账号和密码<br>输入密码时没有回显必须一气呵成的输入完成<br>否则重新执行上面的命令</p>
+<h4 id="8-绑定自己的域名"><a href="#8-绑定自己的域名" class="headerlink" title="8. 绑定自己的域名"></a>8. 绑定自己的域名</h4><p>   打开阿里云的控制台登录进去<br>   进入“域名控制台” —&gt; “进入域名解析列表” —&gt; 找到自己的域名<br>   —&gt; “解析设置” —&gt; “添加记录” —&gt;<br>   记录类型：CNAME<br>   主机记录：@<br>   记录值：hellokitty12345678.github.io</p>
+<p>在blog/source目录下创建一个名为CNAME的文件<br>文件里面写上自己的域名</p>
+<p>jackfrued.top</p>
+<p>重新执行部署命令<br>hexo d -g</p>
+
+    <span class="date end-date">2018-11-19</span>
+  </div>
+
+  
+
+  
+    <div class="post-tags">
+      <i class="fa fa-tags" aria-hidden></i>
+      <a href="/tags/Python/">#Python</a> <a href="/tags/PEP8/">#PEP8</a>
     </div>
-  </div>
-
-  <div class="content">
-    
-  </div>
-  <a class="read-more" href="/2018/11/19/operator和if结构/">Read More</a>
+  
 </div>
 
-      
     </section>
   </div>
 </div>
-
-
-
-
 
     </div>
   </div>
