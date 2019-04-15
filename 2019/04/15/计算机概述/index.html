@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>计算机概述与linux</title>
+<meta name="author" content="LuoLai">
+<!--[if IE]>
+  <meta http-equiv=refresh content='0, http://browsehappy.com'>
+<![endif]-->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css">
+<link rel="stylesheet" href="/css/style.css">
+
+
+<body oncontextmenu="return false">
+  <div class="aios_content">
+    <div class="bg-gradient"></div>
+    <div class="bg-pattern"></div>
+    <div class="menu-bg">
+  <div class="menu-container">
+    <ul>
+      
+        <li class="menu-item">
+          <a href="/">Home</a>
+        </li>
+      
+        <li class="menu-item">
+          <a href="/archives">Docs</a>
+        </li>
+      
+    </ul>
+  </div>
+</div>
+
+<nav>
+  <a></a>
+</nav>
+
+    <div class="container" style="padding-bottom:40px">
+      <div class="row">
+  <div class="col-sm-12">
+    <header>
+  <div class="logo">
+    <h1 id="main-title" class="title"><a href="/">罗来的博客</a></h1>
+  </div>
+</header>
+
+
+    <section class="main">
+      <div class="post">
+  <div class="post-header">
+    <h1 class="title">计算机概述与linux</h1>
+    <div class="post-info">
+      <span class="date">2019-04-15</span>
+
+      
+        <span class="category">
+          <a href="/categories/linux/">linux</a>
+        </span>
+      
+    </div>
+  </div>
+
+  <div class="content">
+    <!-- Gallery -->
+    
+
+    <h1 id="计算机概述"><a href="#计算机概述" class="headerlink" title="计算机概述"></a>计算机概述</h1><h3 id="1-计算机由硬件和软件构成"><a href="#1-计算机由硬件和软件构成" class="headerlink" title="1.计算机由硬件和软件构成"></a>1.计算机由硬件和软件构成</h3><ul>
+<li>计算机硬件的五大部件：运算器、控制器、存储器、输入设备、输出设备</li>
+<li>计算机软件：系统软件（操作系统、编译程序）和应用软件</li>
+<li>操作系统会负责管理和操作硬件，并提供简单的人机交互的接口</li>
+</ul>
+<h1 id="linux命令"><a href="#linux命令" class="headerlink" title="linux命令"></a>linux命令</h1><h4 id="1-命令书写方式-命令-命令的查参数-命令作用的对象"><a href="#1-命令书写方式-命令-命令的查参数-命令作用的对象" class="headerlink" title="1.命令书写方式: 命令 命令的查参数 命令作用的对象"></a>1.命令书写方式: 命令 命令的查参数 命令作用的对象</h4><h4 id="2-Linux常用的命令："><a href="#2-Linux常用的命令：" class="headerlink" title="2.Linux常用的命令："></a>2.Linux常用的命令：</h4><ol>
+<li>w / who / whoami / last - 查看登录用户情况</li>
+<li>adduser / passwd - 创建用户修改密码</li>
+<li>date / cal - 查看日期日历</li>
+<li>write / wall / mesg - 发送消息</li>
+<li>clear - 清除屏幕</li>
+<li>logout / exit - 退出登录</li>
+<li>man / info / –help - 查看帮助</li>
+<li>history - 历史命令 - !命名编号 - 再次执行历史命令</li>
+<li>reboot - 重启系统 - init 6</li>
+<li>shutdown - 关机 - init 0<h4 id="3-Linux文件操作相关命令："><a href="#3-Linux文件操作相关命令：" class="headerlink" title="3. Linux文件操作相关命令："></a>3. Linux文件操作相关命令：</h4></li>
+<li>pwd - print working directory - 打印工作目录</li>
+<li>cd - change directory - 改变目录 - 相对路径和绝对路径</li>
+<li>ls - list directory contents - 列出目录下的内容<br>-l - 长格式查看<br>-a - 查看所有文件 - 在Linux系统中以点开头的文件和文件夹是隐藏的<br>-R - 递归式的查看 - 遇到文件夹要递归的列出文件夹下的内容</li>
+<li>cat - concatenate - 连接多个文件（查看文件的内容）</li>
+<li>touch - 创建空文件或者修改已有文件的最后访问时间</li>
+<li>mkdir - make directory - 创建文件夹<br>-p - 如果需要就创建父文件夹</li>
+<li>rm - remove - 删除<br>-f - 强制删除<br>-r - 递归删除 - 删文件夹需要指定该参数</li>
+<li>rmdir - remove empty directory - 删除空文件夹</li>
+<li>wget - 通过网络获取文件<ul>
+<li>例如：wget <a href="https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tar.xz" target="_blank" rel="noopener">https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tar.xz</a></li>
+<li>例如：wget <a href="https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tgz" target="_blank" rel="noopener">https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tgz</a></li>
+</ul>
+</li>
+<li>gzip / gunzip - 文件压缩/解压缩（gz/tgz）<ul>
+<li>例如：gunzip Python-3.7.3.tgz</li>
+</ul>
+</li>
+<li>xz - 文件压缩/解压缩（xz）<br>-z - 压缩<br>-d - 解压缩<pre><code>- 例如：xz -d Python-3.7.3.xz
+</code></pre></li>
+<li>tar - archive - 文件归档/解归档<br>-xvf - 解归档（将一个文件拆成多个文件）<pre><code>- 例如：tar -xvf Python-3.7.3.tar
+</code></pre>-cvf - 创建归档文件（将多个文件合并成一个文件）</li>
+<li>wc - word count - 查看文件行数、单词数、字符数<br>-l - 查看行数<br>-w - 查看单词数<br>-c - 查看字符数</li>
+<li>sort - 文件排序<br>-r - 降序（默认是从小到大 - 升序）</li>
+<li>uniq - unique - 文件去重（相邻相同的内容会被过滤掉）</li>
+<li>head / tail - 查看文件的开头/结尾部分</li>
+<li>more / less - 分页查看文件<ul>
+<li>例子：cat -n taobao.html | more</li>
+</ul>
+</li>
+<li>diff - different - 比较文件的差别<br>19.echo — 打印输出某个内容，echo 字符串 &gt; 文件名 –在某个文件里添加字符串（覆盖）  echo 字符串 &gt;&gt; 文件名 – 在某个文件内容后面添加字符串(在后面追加)</li>
+</ol>
+<h4 id="4-常用命令"><a href="#4-常用命令" class="headerlink" title="4.常用命令"></a>4.常用命令</h4><p>Ctrl+D - 结束输入<br>Ctrl+C - 中断一个正在执行的命令<br>Ctrl+W - 删除命令中的一块<br>Ctrl+A - 光标到行首<br>Ctrl+E - 光标到行尾</p>
+<h4 id="5-Python-解释器"><a href="#5-Python-解释器" class="headerlink" title="5.Python - 解释器"></a>5.Python - 解释器</h4><p>CPython - C语言实现的Python解释器<br>Jython - Java语言实现的Python解释器<br>IronPython - C#语言实现的Python解释器<br>PyPy - Python语言实现的Python解释器</p>
+
+    <span class="date end-date">2019-04-15</span>
+  </div>
+
+  
+
+  
+    <div class="post-tags">
+      <i class="fa fa-tags" aria-hidden></i>
+      <a href="/tags/Python/">#Python</a> <a href="/tags/PEP8/">#PEP8</a>
+    </div>
+  
+</div>
+
+    </section>
+  </div>
+</div>
+
+    </div>
+  </div>
+  <footer class="footer-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 footer-about">
+        <h2>About</h2>
+        <section>
+          Theme developed by <a href="//github.com/klugjo" target="_blank">Jonathan Klughertz</a><br>Contents created by <a href="//github.com/xaios" target="_blank">AIOS</a>
+        </section>
+      </div>
+      
+  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 footer-about">
+    <h2>New Contents</h2>
+    <ul>
+      
+        <li>
+          <a class="footer-post" href="/2019/04/15/计算机概述/">计算机概述与linux</a>
+        </li>
+      
+        <li>
+          <a class="footer-post" href="/2018/11/19/blog/">Hexo快速搭建博客</a>
+        </li>
+      
+        <li>
+          <a class="footer-post" href="/2018/11/19/operator和if结构/">operator和if结构</a>
+        </li>
+      
+        <li>
+          <a class="footer-post" href="/2018/11/19/Python基础语法/">python基础语法</a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+      
+  <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 footer-categories">
+    <h2>Categories</h2>
+    <ul>
+      
+        <li>
+          <a class="footer-post" href="/categories/Hexo/">Hexo</a>
+        </li>
+      
+        <li>
+          <a class="footer-post" href="/categories/基本语法/">基本语法</a>
+        </li>
+      
+        <li>
+          <a class="footer-post" href="/categories/语言基础/">语言基础</a>
+        </li>
+      
+        <li>
+          <a class="footer-post" href="/categories/linux/">linux</a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <ul class="list-inline footer-social-icons"></ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="footer-copyright">@Untitled. All right reserved | Design & Hexo <a href="//www.codeblocq.com" target="_blank">Jonathan Klughertz</a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js"></script>
+<script src="/js/main.js"></script>
+
