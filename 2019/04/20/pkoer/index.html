@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>21点游戏</title>
+<meta name="author" content="LuoLai">
+<!--[if IE]>
+  <meta http-equiv=refresh content='0, http://browsehappy.com'>
+<![endif]-->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css">
+<link rel="stylesheet" href="/css/style.css">
+
+
+<body oncontextmenu="return false">
+  <div class="aios_content">
+    <div class="bg-gradient"></div>
+    <div class="bg-pattern"></div>
+    <div class="menu-bg">
+  <div class="menu-container">
+    <ul>
+      
+        <li class="menu-item">
+          <a href="/">Home</a>
+        </li>
+      
+        <li class="menu-item">
+          <a href="/archives">Docs</a>
+        </li>
+      
+    </ul>
+  </div>
+</div>
+
+<nav>
+  <a></a>
+</nav>
+
+    <div class="container" style="padding-bottom:40px">
+      <div class="row">
+  <div class="col-sm-12">
+    <header>
+  <div class="logo">
+    <h1 id="main-title" class="title"><a href="/">罗来的博客</a></h1>
+  </div>
+</header>
+
+
+    <section class="main">
+      <div class="post">
+  <div class="post-header">
+    <h1 class="title">21点游戏</h1>
+    <div class="post-info">
+      <span class="date">2019-04-20</span>
+
+      
+    </div>
+  </div>
+
+  <div class="content">
+    <!-- Gallery -->
+    
+
+    <h1 id="扑克游戏"><a href="#扑克游戏" class="headerlink" title="扑克游戏"></a>扑克游戏</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> random</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Pokers</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        self.index = <span class="number">0</span></span><br><span class="line">        self.cards = []</span><br><span class="line">        <span class="keyword">for</span> x <span class="keyword">in</span> range(<span class="number">4</span>):</span><br><span class="line">            <span class="keyword">for</span> y <span class="keyword">in</span> range(<span class="number">1</span>, <span class="number">14</span>):</span><br><span class="line">                card = Card(x, y)</span><br><span class="line">                self.cards.append(card)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">bush_card</span><span class="params">(self)</span>:</span></span><br><span class="line">        random.shuffle(self.cards)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">give_card</span><span class="params">(self)</span>:</span></span><br><span class="line">        card = self.cards[self.index]</span><br><span class="line">        self.index += <span class="number">1</span></span><br><span class="line">        <span class="keyword">return</span> card</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">is_or</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> self.index &gt;= len(self.cards):</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Card</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, color, num)</span>:</span></span><br><span class="line">        self.color = color</span><br><span class="line">        self.num = num</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__repr__</span><span class="params">(self)</span>:</span></span><br><span class="line">       all_color = [<span class="string">'黑桃'</span>, <span class="string">'红桃'</span>, <span class="string">'梅花'</span>, <span class="string">'方块'</span>]</span><br><span class="line">       all_num = [<span class="string">''</span>, <span class="string">'A'</span>, <span class="string">'2'</span>, <span class="string">'3'</span>, <span class="string">'4'</span>, <span class="string">'5'</span>, <span class="string">'6'</span>, <span class="string">'7'</span>, <span class="string">'8'</span>, <span class="string">'9'</span>, <span class="string">'10'</span>, <span class="string">'J'</span>, <span class="string">'Q'</span>, <span class="string">'K'</span>]</span><br><span class="line">       <span class="keyword">return</span> <span class="string">f'<span class="subst">&#123;all_color[self.color]&#125;</span><span class="subst">&#123;all_num[self.num]&#125;</span>'</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__add__</span><span class="params">(self, other)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> self.num + other.num</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Players</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, name)</span>:</span></span><br><span class="line">        self.name = name</span><br><span class="line">        self.cards = []</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">get_card</span><span class="params">(self, p: Pokers)</span>:</span></span><br><span class="line">        card = p.give_card()</span><br><span class="line">        self.cards.append(card)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></span><br><span class="line">    p = Pokers()</span><br><span class="line">    persons = [<span class="string">'姜柯'</span>, <span class="string">'罗虎'</span>, <span class="string">'肖应中'</span>, <span class="string">'王小华'</span>]</span><br><span class="line">    all_players = []</span><br><span class="line">    p.bush_card()</span><br><span class="line">    <span class="keyword">for</span> name <span class="keyword">in</span> persons:</span><br><span class="line">        temp = &#123;&#125;</span><br><span class="line">        play = Players(name)</span><br><span class="line">        play.get_card(p)</span><br><span class="line">        play.get_card(p)</span><br><span class="line">        temp[<span class="string">'name'</span>] = play.name</span><br><span class="line">        temp[<span class="string">'cards'</span>] = play.cards</span><br><span class="line">        temp[<span class="string">'sum'</span>] = temp[<span class="string">'cards'</span>][<span class="number">0</span>] + temp[<span class="string">'cards'</span>][<span class="number">1</span>]</span><br><span class="line">        all_players.append(temp)</span><br><span class="line">    <span class="keyword">for</span> name_num <span class="keyword">in</span> all_players:</span><br><span class="line">        <span class="keyword">if</span> name_num[<span class="string">'sum'</span>] &gt; <span class="number">21</span>:</span><br><span class="line">            name_num[<span class="string">'sum'</span>] = name_num[<span class="string">'sum'</span>] - <span class="number">21</span></span><br><span class="line">    all_players.sort(key=<span class="keyword">lambda</span> x: x[<span class="string">'sum'</span>], reverse=<span class="literal">True</span>)</span><br><span class="line">    print(<span class="string">f'本次游戏的扑克牌顺序为<span class="subst">&#123;p.cards&#125;</span>'</span>)</span><br><span class="line">    print(<span class="string">'游戏开始：\n'</span>)</span><br><span class="line">    print(all_players)</span><br><span class="line">    print(<span class="string">f"获胜者是<span class="subst">&#123;all_players[<span class="number">0</span>][<span class="string">'name'</span>]&#125;</span>,最大点数为<span class="subst">&#123;all_players[<span class="number">0</span>][<span class="string">'sum'</span>]&#125;</span>"</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>
+    <span class="date end-date">2019-04-20</span>
+  </div>
+
+  
+
+  
+    <div class="post-tags">
+      <i class="fa fa-tags" aria-hidden></i>
+      <a href="/tags/Python/">#Python</a> <a href="/tags/PEP8/">#PEP8</a>
+    </div>
+  
+</div>
+
+    </section>
+  </div>
+</div>
+
+    </div>
+  </div>
+  <footer class="footer-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 footer-about">
+        <h2>About</h2>
+        <section>
+          Theme developed by <a href="//github.com/klugjo" target="_blank">Jonathan Klughertz</a><br>Contents created by <a href="//github.com/xaios" target="_blank">AIOS</a>
+        </section>
+      </div>
+      
+  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 footer-about">
+    <h2>New Contents</h2>
+    <ul>
+      
+        <li>
+          <a class="footer-post" href="/2019/04/20/pkoer/">21点游戏</a>
+        </li>
+      
+        <li>
+          <a class="footer-post" href="/2019/04/15/计算机概述/">计算机概述与linux</a>
+        </li>
+      
+        <li>
+          <a class="footer-post" href="/2018/11/19/Python基础语法/">python基础语法</a>
+        </li>
+      
+        <li>
+          <a class="footer-post" href="/2018/11/19/blog/">Hexo快速搭建博客</a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+      
+  <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 footer-categories">
+    <h2>Categories</h2>
+    <ul>
+      
+        <li>
+          <a class="footer-post" href="/categories/语言基础/">语言基础</a>
+        </li>
+      
+        <li>
+          <a class="footer-post" href="/categories/Hexo/">Hexo</a>
+        </li>
+      
+        <li>
+          <a class="footer-post" href="/categories/基本语法/">基本语法</a>
+        </li>
+      
+        <li>
+          <a class="footer-post" href="/categories/linux/">linux</a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <ul class="list-inline footer-social-icons"></ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="footer-copyright">@Untitled. All right reserved | Design & Hexo <a href="//www.codeblocq.com" target="_blank">Jonathan Klughertz</a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js"></script>
+<script src="/js/main.js"></script>
+
